@@ -1,0 +1,94 @@
+{
+  "database": "SharePoint Online",
+  "primaryList": "DepositCertificates_Master",
+  "recordCount": 80000,
+  "fields": [
+    {
+      "internalName": "Title",
+      "displayName": "CertificateIdentifier",
+      "type": "SingleLine",
+      "indexed": true,
+      "required": true
+    },
+    {
+      "internalName": "Series",
+      "displayName": "CertificateSeries",
+      "type": "Choice",
+      "indexed": true,
+      "required": true
+    },
+    {
+      "internalName": "SerialNumber",
+      "displayName": "SerialNumber",
+      "type": "Number",
+      "indexed": true,
+      "required": true
+    },
+    {
+      "internalName": "StatusCode",
+      "displayName": "Status",
+      "type": "Choice",
+      "choices": [
+        "Dispatched",
+        "IssuedToClient",
+        "Returned",
+        "Voided"
+      ],
+      "indexed": true
+    },
+    {
+      "internalName": "CylinderType",
+      "displayName": "CylinderType",
+      "type": "Choice",
+      "choices": [
+        "Steel 11kg",
+        "Nano 8kg",
+        "Domlight 10kg",
+        "Propane 33kg"
+      ]
+    },
+    {
+      "internalName": "DepositAmount",
+      "displayName": "DepositAmountPLN",
+      "type": "Currency"
+    },
+    {
+      "internalName": "PartnerNetwork",
+      "displayName": "NetworkPartner",
+      "type": "Choice",
+      "choices": [
+        "Shell",
+        "BP",
+        "COCO",
+        "Independent"
+      ],
+      "indexed": true
+    },
+    {
+      "internalName": "StationID",
+      "displayName": "StationCode",
+      "type": "SingleLine",
+      "indexed": true
+    },
+    {
+      "internalName": "DispatchDate",
+      "displayName": "DispatchDate",
+      "type": "DateTime"
+    },
+    {
+      "internalName": "IssueDate",
+      "displayName": "IssueDate",
+      "type": "DateTime"
+    },
+    {
+      "internalName": "ReturnDate",
+      "displayName": "ReturnDate",
+      "type": "DateTime"
+    },
+    {
+      "internalName": "ScanAttachmentUrl",
+      "displayName": "ScanDocumentUrl",
+      "type": "Hyperlink"
+    }
+  ]
+}

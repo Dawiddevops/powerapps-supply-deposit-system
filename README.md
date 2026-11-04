@@ -1,6 +1,6 @@
 # Enterprise Supply Certificate & Deposit Management System
 
-An enterprise Power Apps Canvas application and SharePoint Online master database architecture built to manage **80,000+ deposit certificates** across partner retail networks (Shell, BP, COCO) - replacing a slow, error-prone legacy Excel system and eliminating a critical organizational Single Point of Failure (SPOF / bus factor = 1).
+An enterprise Power Apps Canvas application and SharePoint Online master database architecture built to manage **80,000+ deposit certificates** across nationwide commercial distribution and retail partner networks - replacing a slow, error-prone legacy Excel system and eliminating a critical organizational Single Point of Failure (SPOF / bus factor = 1).
 
 > **Portfolio note:** This repository is an architecture showcase and technical documentation. The production application operates within a private enterprise Microsoft 365 tenant. All company names, partner network identifiers, station addresses, and personnel details in this documentation have been sanitized and replaced with illustrative enterprise placeholders (*EnergyCorp Logistics / Partner Networks*).
 
@@ -15,7 +15,7 @@ In the gas cylinder distribution industry, customers pay a refundable deposit up
   - Severe performance degradation (minutes to open, frequent freezing and file locking conflicts).
   - High risk of data loss and corruption without transaction logging.
   - **Single Point of Failure (Bus Factor = 1):** Only one specific administrator knew how the calculations and macros functioned, making substitution impossible during absences.
-  - Manual, tedious monthly reconciliation between retail station reports (e.g. Shell, BP) and internal records.
+  - Manual, tedious monthly reconciliation between partner station reports and internal ERP/SharePoint records.
 
 ---
 
@@ -25,7 +25,7 @@ A modern, cloud-native **Power Apps Canvas Master System** connected to an index
 
 ```mermaid
 flowchart TD
-    A["Partner Stations (Shell / BP / Network)"] -->|Monthly Sales & Returns Data| B["Document Dropzone (SharePoint Library)"]
+    A["Partner Retail Stations (Authorized Network)"] -->|Monthly Sales & Returns Data| B["Document Dropzone (SharePoint Library)"]
     B -->|Trigger Intake Flow| C["Power Automate Parsing Flow"]
     C -->|Reconcile & Update| D[("Master SharePoint Lists (80k+ Rows)")]
     

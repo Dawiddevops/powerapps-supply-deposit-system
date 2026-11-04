@@ -37,14 +37,14 @@
       "indexed": true
     },
     {
-      "internalName": "CylinderType",
-      "displayName": "CylinderType",
+      "internalName": "ContainerType",
+      "displayName": "ContainerAssetCategory",
       "type": "Choice",
       "choices": [
-        "Steel 11kg",
-        "Nano 8kg",
-        "Domlight 10kg",
-        "Propane 33kg"
+        "Standard Industrial Unit",
+        "Lightweight Composite Unit",
+        "Specialty Commercial Unit",
+        "Heavy Duty Industrial Unit"
       ]
     },
     {
@@ -53,14 +53,14 @@
       "type": "Currency"
     },
     {
-      "internalName": "PartnerNetwork",
-      "displayName": "NetworkPartner",
+      "internalName": "PartnerCategory",
+      "displayName": "PartnerNetworkCategory",
       "type": "Choice",
       "choices": [
-        "Tier-1 Partner",
+        "Tier-1 Enterprise Partner",
         "Regional Distributor",
-        "COCO",
-        "Independent"
+        "Direct Company Branch",
+        "Independent Contractor"
       ],
       "indexed": true
     },

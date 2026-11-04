@@ -6,7 +6,7 @@ An enterprise Power Apps Canvas application and SharePoint Online master databas
 
 ---
 
-## 🎯 Business Problem & Context
+## Business Problem & Context
 
 In the gas cylinder distribution industry, customers pay a refundable deposit upon obtaining a cylinder, documented by a unique serial certificate. When cylinders are returned, deposit reimbursements are settled against these certificates.
 
@@ -19,7 +19,7 @@ In the gas cylinder distribution industry, customers pay a refundable deposit up
 
 ---
 
-## 💡 Solution Overview
+## Solution Overview
 
 A modern, cloud-native **Power Apps Canvas Master System** connected to an indexed **SharePoint Online list architecture**, automated with **Power Automate Cloud Flows**:
 
@@ -38,7 +38,7 @@ flowchart TD
 
 ---
 
-## ⚙️ Key Technical Challenges & Implementations
+## Key Technical Challenges & Implementations
 
 ### 1. SharePoint Delegation Limit Workaround (>5,000 Item Threshold)
 SharePoint Online lists enforce a strict 5,000-item query threshold. Querying a dataset of **80,000+ items** directly in Power Apps causes non-delegable query warnings and truncated data.
@@ -80,7 +80,7 @@ Administrators frequently dispatch or settle continuous blocks of certificates (
 
 ---
 
-## 📊 Data Schema Design
+## Data Schema Design
 
 | List Name | Estimated Rows | Key Indexed Columns | Purpose |
 |---|---|---|---|
@@ -91,7 +91,7 @@ Administrators frequently dispatch or settle continuous blocks of certificates (
 
 ---
 
-## 🚀 Business Impact
+## Business Impact
 
 * **100% Elimination of Excel SPOF:** The entire workflow is now standardized; new team members can take over administration on day one without manual handover.
 * **Zero Performance Latency:** Sub-second search across 80,000 records using indexed server-side delegation.
@@ -99,7 +99,7 @@ Administrators frequently dispatch or settle continuous blocks of certificates (
 
 ---
 
-## 👨‍💻 Author
+## Author
 **Dawid Piotrowski**
 * Role: IT Automation & Power Platform Developer
 * LinkedIn: [linkedin.com/in/dawid-piotrowski0304](https://linkedin.com/in/dawid-piotrowski0304)

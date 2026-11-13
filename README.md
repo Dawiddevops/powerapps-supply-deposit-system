@@ -2,6 +2,7 @@
 
 An enterprise Power Apps Canvas application and SharePoint Online master database architecture built to manage **80,000+ deposit certificates** across nationwide commercial distribution and retail partner networks - replacing a slow, error-prone legacy Excel system and eliminating a critical organizational Single Point of Failure (SPOF / bus factor = 1).
 
+[![Architecture & ADRs](https://img.shields.io/badge/Architecture-ADRs_%26_Design_Specs-blue?logo=mermaid&logoColor=white)](ARCHITECTURE.md)
 > **Portfolio note:** This repository is an architecture showcase and technical documentation. The production application operates within a private enterprise Microsoft 365 tenant. All company names, partner network identifiers, station addresses, and personnel details in this documentation have been sanitized and replaced with illustrative enterprise placeholders (*EnergyCorp Logistics / Partner Networks*).
 
 ---
